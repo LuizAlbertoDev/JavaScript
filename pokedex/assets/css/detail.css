@@ -1,0 +1,118 @@
+/* Arquivo: assets/css/detail.css */
+
+.pokemon-detail-page {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon-detail-page .header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: white;
+}
+
+.pokemon-detail-page .header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.pokemon-detail-page .header .nav a img {
+    filter: invert(1);
+    width: 24px;
+    height: 24px;
+}
+
+.pokemon-detail-page .header .pokemon-identity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.pokemon-detail-page .header .pokemon-identity .name {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pokemon-detail-page .header .pokemon-identity .number {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.pokemon-detail-page .header .types {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.pokemon-detail-page .header .types .type {
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.825rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.pokemon-detail-page .pokemon-image {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    z-index: 1;
+    margin-top: -3rem;
+}
+
+.pokemon-detail-page .details-card {
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    margin-top: -5rem;
+    flex-grow: 1;
+}
+
+.details-card .tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    color: #a4a4a4;
+    font-weight: bold;
+}
+
+.details-card .tabs .active {
+    color: black;
+    border-bottom: 2px solid #6c79db;
+}
+
+.details-card .info-section {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.details-card .info-section .label {
+    font-weight: bold;
+    color: #333;
+}
+
+.details-card .info-section .value {
+    color: #666;
+    text-transform: capitalize;
+}
+
+.details-card h3 {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}

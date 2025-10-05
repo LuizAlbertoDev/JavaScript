@@ -6,6 +6,11 @@
     grid-template-columns: 1fr;
 }
 
+.pokemons a {
+   font-style: none;
+   text-decoration: none;
+}
+
  .normal    {
     background-color: #a6a877}
  .grass     {
