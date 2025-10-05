@@ -33,7 +33,7 @@ function loadPokemonItens(offset, limit){
 loadPokemonItens(offset, limit);
 loadMoreButton.addEventListener('click', () => {
     offset += limit;
-    const qtdRecordsNextPage = offset + limit;  // Corrigi o nome (typo fix)
+    const qtdRecordsNextPage = offset + limit;
     
     if (qtdRecordsNextPage >= maxRecords) {
         const newLimit = maxRecords - offset;
